@@ -16,13 +16,23 @@ p {
   color: #065900;
 }
 
-#person-card #names {
-  text-align: left;
-  margin-left: 4%;
-  margin-top: -1%;
+#container {
+  margin-left: 3%;
+  margin-top: 25px;
 }
 
-#results {
-	display: block;
-	margin: auto;
+#person {
+  margin-top: -0.6%;
+}
+
+#person:hover {
+  color: #006d03;
+}
+
+#person-container {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  display: block;
+  margin-top: 10%;
 }

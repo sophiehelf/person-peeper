@@ -5,24 +5,14 @@ import PersonShower from './PersonShower'
 
 
 class PersonList extends React.Component {
-	constructor() {
-		super();
 
-		this.state = {
-			people: PersonData
-		}
-	}
-
-	handleClick = (data) => {	
-		console.log(data)
-	}	
 
 	render() {
 
 		return(
 			<div id="container">
-			{this.state.people.map((person, key) => {
-				return <Person key={key} person={person} handleClick={this.handleClick} />
+			{this.props.people.map((person, key) => {
+				return <p id="person"><Person key={key} person={person} handleClick={this.props.handleClick} value={person}/></p>
 			})}
 			</div>
 		)
