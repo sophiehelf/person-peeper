@@ -16,21 +16,7 @@ class PersonEditor extends React.Component {
 
 	}
 
-	handleFirstNameChange = (e) => {
-		console.log(e.target.value)
-	}
 
-	handleLastNameChange = (e) => {
-		console.log(e.target.value)
-	}
-
-	handleCityChange = (e) => {
-		console.log(e.target.value)
-	}
-
-	handleTheStateChange = (e) => {
-		console.log(e.target.value)
-	}
 
 
 	render() {
@@ -39,19 +25,19 @@ class PersonEditor extends React.Component {
 			<div>
 				<form name="person-form" onSubmit={this.props.handleInputChange}>
 					 <label>
-					 First Name: <input type="text" name="firstName" onSubmit={this.handleFirstNameChange}/>
+					 First Name: <input type="text" name="firstName" onSubmit={this.handleInputChange}/>
 					 </label>
 					 <br />
 					 <label> 
-					 Last Name: <input type="text" name="lastName" onSubmit={this.handleLastNameChange}/>
+					 Last Name: <input type="text" name="lastName" onSubmit={this.handleInputChange}/>
 					 </label>
 					 <br />
 					 <label>
-					 City: <input type="text" name="city" onSubmit={this.handleCityChange}/>
+					 City: <input type="text" name="city" onSubmit={this.handleInputChange}/>
 					 </label>
 					 <br />
 					 <label>
-					 State: <input type="text" name="theState" onSubmit={this.handleTheStateChange}/>
+					 State: <input type="text" name="theState" onSubmit={this.handleInputChange}/>
 					 </label>
 					 <input type="submit" value="Click me"/> 
 				</form>

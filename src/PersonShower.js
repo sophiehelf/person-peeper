@@ -18,12 +18,9 @@ class PersonShower extends React.Component {
 		e.preventDefault();
 		debugger;
 		// console.log(e.target.value)
-		const target = e.target.value;
+		const target = e.target;
 		debugger;
-		// const name = target.name
-		// this.setState({
-		// 	[name]: target
-		// })
+		console.log(target)
 	}
 
 
