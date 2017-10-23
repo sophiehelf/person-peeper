@@ -3,7 +3,9 @@ import React from 'react'
 
 class PersonEditor extends React.Component {
 	constructor(props) {
-		super(props)	
+		super(props)
+
+
 
 		this.state = {
 			firstName: this.props.person.firstName,
@@ -14,29 +16,20 @@ class PersonEditor extends React.Component {
 
 	}
 
-	handleFirstNameChange(e) {
-		this.setState({
-			firstName: e.target.value
-		})
+	handleFirstNameChange = (e) => {
+		console.log(e.target.value)
 	}
 
-	handleLastNameChange(e){
-		this.setState({
-			lastName: e.target.value
-		})
+	handleLastNameChange = (e) => {
+		console.log(e.target.value)
 	}
 
-	handleCityChange(e) {
-		this.setState({
-			city: e.target.value
-		})
+	handleCityChange = (e) => {
+		console.log(e.target.value)
 	}
 
-	handleTheStateChange(e) {
-		console.log(e.target)
-		// this.setState({
-		// 	theState: e.target.value
-		// })
+	handleTheStateChange = (e) => {
+		console.log(e.target.value)
 	}
 
 
