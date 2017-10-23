@@ -6,7 +6,9 @@ import PersonEditor from './PersonEditor'
 
 
 class PersonList extends React.Component {
-
+	constructor() {
+		super()
+	}
 
 	render() {
 

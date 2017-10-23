@@ -5,17 +5,64 @@ class PersonEditor extends React.Component {
 	constructor(props) {
 		super(props)	
 
+		this.state = {
+			firstName: this.props.person.firstName,
+			lastName: this.props.person.lastName,
+			city: this.props.person.city,
+			state: this.props.person.theState
+		}
+
 	}
 
-	handleChange = (e) => {
-		e.preventDefault;
-		console.log(this.props)
+	handleFirstNameChange(e) {
+		this.setState({
+			firstName: e.target.value
+		})
 	}
+
+	handleLastNameChange(e){
+		this.setState({
+			lastName: e.target.value
+		})
+	}
+
+	handleCityChange(e) {
+		this.setState({
+			city: e.target.value
+		})
+	}
+
+	handleTheStateChange(e) {
+		console.log(e.target)
+		// this.setState({
+		// 	theState: e.target.value
+		// })
+	}
+
 
 	render() {
 
 		return(
-			<form onSubmit={this.props.handleSubmit} />
+			<div>
+				<form name="person-form" onSubmit={this.props.handleInputChange}>
+					 <label>
+					 First Name: <input type="text" name="firstName" onSubmit={this.handleFirstNameChange}/>
+					 </label>
+					 <br />
+					 <label> 
+					 Last Name: <input type="text" name="lastName" onSubmit={this.handleLastNameChange}/>
+					 </label>
+					 <br />
+					 <label>
+					 City: <input type="text" name="city" onSubmit={this.handleCityChange}/>
+					 </label>
+					 <br />
+					 <label>
+					 State: <input type="text" name="theState" onSubmit={this.handleTheStateChange}/>
+					 </label>
+					 <input type="submit" value="Click me"/> 
+				</form>
+			</div>
 		)
 	}
 }
