@@ -2,6 +2,7 @@ import React from 'react';
 import PersonData from './PersonData.js'
 import Person from './Person'
 import PersonShower from './PersonShower'
+import PersonEditor from './PersonEditor'
 
 
 class PersonList extends React.Component {

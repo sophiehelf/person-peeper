@@ -9,8 +9,9 @@ ul {
 }
 
 p {
-  font-family: "Arial"
+  font-family: "Arial",
 }
+
 
 #person-name:hover {
   color: #065900;
@@ -23,6 +24,7 @@ p {
 
 #person {
   margin-top: -0.6%;
+  transition: color 0.1s linear;
 }
 
 #person:hover {
@@ -34,5 +36,15 @@ p {
   width: 40%;
   margin: auto;
   display: block;
-  margin-top: 10%;
+  margin-top: -4%;
+  border: 1px black dashed;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+}
+
+
+button {
+  border: 1px dotted black;
 }

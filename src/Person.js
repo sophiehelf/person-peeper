@@ -1,5 +1,6 @@
 import React from 'react';
 import PersonShower from './PersonShower'
+import PersonEditor from './PersonEditor'
 
 
 class Person extends React.Component {
